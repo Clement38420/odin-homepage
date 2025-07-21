@@ -19,6 +19,8 @@
     --border: hsl(0 0 30%);
     --primary: #ffd31e;
 
+    --entry-animation-duration: 1s;
+
     font-size: 16px;
 }
 
@@ -51,7 +53,7 @@ h2 {
     transform-origin: top left;
     transform: rotateZ(-10deg) translateX(-100vw);
     z-index: -10;
-    animation: header-deco-slide 1.3s ease-out;
+    animation: header-deco-slide var(--entry-animation-duration) ease-out;
 }
 
 @keyframes header-deco-slide {
@@ -70,7 +72,7 @@ h2 {
     align-items: center;
     padding: 32px;
     height: 100%;
-    animation: about-me-slide 1.3s ease-out;
+    animation: about-me-slide var(--entry-animation-duration) ease-out;
 }
 
 @keyframes about-me-slide {
