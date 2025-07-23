@@ -212,3 +212,20 @@ h2 {
         transform: scale(1);
     }
 }
+
+footer {
+    padding: 32px;
+    background-color: var(--primary);
+}
+
+footer > p {
+    margin-bottom: 24px;
+}
+
+.phone {
+    margin-bottom: 8px;
+}
+
+footer > p > i {
+    margin-right: 8px;
+}
