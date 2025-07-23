@@ -24,6 +24,10 @@
     font-size: 16px;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     overflow-x: hidden;
     background-color: var(--bg-dark);
@@ -134,6 +138,7 @@ h2 {
 
 .icons a {
     transition: transform 0.1s;
+    color: black;
 }
 
 .icons a:visited {
@@ -228,4 +233,76 @@ footer > p {
 
 footer > p > i {
     margin-right: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: max-content;
+        width: 100vw;
+    }
+
+    .about-me {
+        display: block;
+        padding: 16px;
+        height: 100%;
+    }
+
+    .about-me .text {
+        margin-top: 16px;
+        padding: 16px;
+    }
+
+    .portrait {
+        width: 100%;
+    }
+
+    .my-work {
+        margin: 32px 16px;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    header {
+        height: max-content;
+    }
+
+    .about-me {
+        display: block;
+    }
+
+    .about-me h2 {
+        text-align: center;
+    }
+
+    .about-me .text {
+        margin-top: 80px;
+        margin-left: 40px;
+        display: block;
+    }
+
+    .portrait {
+        display: block;
+        float: left;
+        shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 90%);
+        width: 300px;
+        height: 300px;
+        margin-right: 32px;
+    }
+
+    .portrait img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .portrait .name {
+        top: 10px;
+        left: 250px;
+        width: calc(100vw - 250px - 32px);
+    }
+
+    .about-me .icons {
+        display: none;
+    }
 }
