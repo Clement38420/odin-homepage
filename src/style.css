@@ -40,6 +40,10 @@ h1, h2, h3 {
     font-weight: normal;
 }
 
+p {
+    color: var(--text-muted);
+}
+
 h2 {
     margin-bottom: 16px;
     font-size: 2rem;
@@ -122,13 +126,13 @@ h2 {
     justify-content: space-between;
 }
 
-.text .icons {
+.icons {
     align-self: end;
     display: flex;
     gap: 16px;
 }
 
-.text a {
+.icons a {
     transition: transform 0.1s;
 }
 
